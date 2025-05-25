@@ -1,0 +1,88 @@
+/* App.css */
+
+/* Set the background for the entire body */
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('./Assets/cloud.jpg'); /* adjust path if needed */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  font-family: sans-serif;
+}
+
+/* Center the app and add translucent background for readability */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+
+  background: rgba(255, 255, 255, 0.2); /* glass effect */
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 2rem;
+  margin: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+/* Input group spacing and styling */
+.input-group {
+  margin-bottom: 1rem;
+}
+
+/* Input and button layout */
+.input-group input,
+.input-group button {
+  margin: 0 5px;
+  padding: 8px 12px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* Button hover effect */
+.input-group button:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+/* Weather info box spacing */
+.weather-box {
+  margin-top: 20px;
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Weather icon size */
+.weather-box img {
+  width: 80px;
+  height: 80px;
+}
+
+/* Error message styling */
+.error {
+  color: red;
+  font-weight: bold;
+}
+
+/* Weather chart styling */
+.weather-chart {
+  margin-top: 30px;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 15px;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 700px;
+}
